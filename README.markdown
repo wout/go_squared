@@ -12,15 +12,40 @@ Any Ruby on Rails developer who wants/needs to load trends from GoSquared Statis
 
     gem install go_squared
 
-### Usage
+
+### Initialization
 
 Initialize the connection for a given site:
 
     @gs = GoSquared.new('Your API Key', 'GSN-123456-A')
 
+
+### Metrics
+
 To fetch the pageviews metric simply do:
 
     @pageviews = @gs.trends.pageviews
+
+All available metrics are:
+
+- pageviews _(Total number of pageviews and uniques per unit time)_
+- topcontent _(Top performing content)_
+- ppv _(Pages per view per unit time)_
+- browsers _(Browsers)_
+- platforms _(Platforms)_
+- referrers _(Referrers)_
+- locations _(Locations)_
+- languages _(Languages)_
+- screens _(Screen sizes)_
+- capabilities _(Flash & Java availability)_
+- queries _(Search queries)_
+- keywords _(Search keywords)_
+- nvr _(New vs Returning visitors per unit time)_
+- sources _(Organic - search engine - sources)_
+- toplanding _(Top landing pages)_
+- topexit _(Top exit pages)_
+
+### Method chain
 
 By default trends form one month ago until now are fetched.
 To get a custom timeframe:
