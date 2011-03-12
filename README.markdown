@@ -41,14 +41,41 @@ To get the raw XML data:
 
     @xml = @pageviews.xml
 
-To get a ruby Hash with symbolized keys:
+To get an array of ruby Hashes with symbolized keys:
 
     @stats = @pageviews.from_xml
 
+The latter will return something like:
+    
+    {:hits=>"41", :uniques=>"28", :stat_start=>"1298736000", :time_grouping=>"2011057", :display_time=>"Sat, 26 Feb 11"}
+    {:hits=>"126", :uniques=>"77", :stat_start=>"1298764800", :time_grouping=>"2011058", :display_time=>"Sun, 27 Feb 11"}
+    {:hits=>"105", :uniques=>"56", :stat_start=>"1298851200", :time_grouping=>"2011059", :display_time=>"Mon, 28 Feb 11"}
+    ...
 
 
+## Important
+
+This gem is written for Rails 3.
+Rails 2 might work but it's not tested.
+
+Note that this gem is still under development.
+It only covers the trends section of the gosquared.com API.
 
 
+## Contributing to go_squared
+ 
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
+* Fork the project
+* Start a feature/bugfix branch
+* Commit and push until you are happy with your contribution
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+## Copyright
+
+Copyright (c) 2011 Wout Fierens. See LICENSE.txt for
+further details.
 
 
 
