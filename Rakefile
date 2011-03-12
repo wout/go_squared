@@ -15,10 +15,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "go_squared"
   gem.homepage = "http://github.com/wout/go_squared"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A ruby wrapper for the GoSquared API }
+  gem.description = %Q{Currently only the trends part is covered}
   gem.email = "wout@boysabroad.com"
-  gem.authors = ["wout fierens"]
+  gem.authors = ["Wout Fierens"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
