@@ -45,6 +45,7 @@ All available metrics are:
 - toplanding _(Top landing pages)_
 - topexit _(Top exit pages)_
 
+
 ### Method chain
 
 By default trends form one month ago until now are fetched.
@@ -61,8 +62,11 @@ All chainable methods are:
 - group_by _(options are 'day', 'week', 'month' and 'year' - defaults to 'day')_
 - limit _(must be an integer - defaults to 30)_
 
-Up till now no data data been fetched.
-To get the raw XML data:
+
+### Fetch data
+
+Up till now no data has been fetched.
+To get the raw XML:
 
     @xml = @pageviews.xml
 
